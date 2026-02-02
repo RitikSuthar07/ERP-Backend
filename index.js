@@ -5,7 +5,7 @@ const app = express();
 const PORT = 3000;
 
 connectToMongoDB("mongodb://127.0.0.1:27017/College-ERP").then(() =>
-  console.log("MongoDB connected"),
+  console.log("MongoDB connected successfully"),
 );
 
 app.get('/', (req,res) =>{
